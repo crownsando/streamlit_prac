@@ -17,7 +17,7 @@ with col1:
 
     img_idx = img_list.index(cat_select)
     folder = './data/'
-    image_files = ['cat (1).jpg','cat (2).jpg','cat (3).jpg']
+    image_files = ['cat(1).jpg','cat(2).jpg','cat(3).jpg']
 
     image_path = os.path.dirname(os.path.abspath(__file__)) + folder + image_files[img_idx]
     image = Image.open(image_path)
