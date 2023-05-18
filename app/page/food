@@ -1,0 +1,9 @@
+food_list = ['Burger', 'Susi','Taco']
+food_select = st.selectbox('좋아하는 음식', food_list)
+
+st.write(food_select)
+food_idx = food_list.index(food_select)
+food_files = ['burger.jpg','susi.jpg','taco.jpg']
+image_path1 = folder + food_files[food_idx]
+image1 = Image.open(image_path1)
+st.image(image1)

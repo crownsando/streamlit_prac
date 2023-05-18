@@ -1,0 +1,10 @@
+img_list = ['sleeping sando', 'cute sando','sleeping crown']
+cat_select = st.sidebar.selectbox('우리집 고양이',img_list)
+
+st.write(cat_select)
+img_idx = img_list.index(cat_select)
+folder = '../data/'
+image_files = ['cat (1).jpg','cat (2).jpg','cat (3).jpg']
+image_path = folder + image_files[img_idx]
+image = Image.open(image_path)
+st.image(image)
