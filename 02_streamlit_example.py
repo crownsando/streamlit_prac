@@ -32,7 +32,7 @@ with col2:
     folder = './data/'
     food_files = ['burger.jpg','susi.jpg','taco.jpg']
 
-    image_path1 = os.path.dirname(os.path.abspath(__file__)) + folder + food_files[food_idx]
+    image_path1 = folder + food_files[food_idx]
     image1 = Image.open(image_path1)
     st.image(image1)
 
